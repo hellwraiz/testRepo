@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+
+@layer components {
+  .buttons {
+    @apply placeholder-[#2B2C38B2]/70 w-full focus:ring-0 focus:outline-none p-4 border bg-white border-[#D1D1D1];
+  }
+}
+
+.iti {
+  width: 100%;
+}
