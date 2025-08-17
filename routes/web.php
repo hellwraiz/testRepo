@@ -39,7 +39,7 @@ Route::post('/submit-form', function (Request $request) {
 
     Log::info("message");
 
-    //Mail::to($validatedData['email'])->send(new FormInputEmail($validatedData));
+    Mail::to($validatedData['email'])->send(new FormInputEmail($validatedData));
 
     return response()->json(['message' => 'Form submitted successfully!']);
 });
